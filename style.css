@@ -1,5 +1,7 @@
 @import url(./styles/home.css);
 @import url(./styles/header.css);
+@import url(./styles/service.css);
+@import url(./styles/rate.css);
 
 :root {
   font-family: "Roboto", Arial, sans-serif;
@@ -8,7 +10,7 @@
   --height-header-mobile: 50px;
 }
 
-h1{
+h1 {
   font-family: "Abril Fatface", cursive;
   font-family: "DM Serif Display", serif;
 }
@@ -21,3 +23,9 @@ h1{
   text-decoration: none;
   /* overflow-x: hidden; */
 }
+
+a{
+  color: black;
+}
+
+
