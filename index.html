@@ -32,21 +32,18 @@
         <input class="header__menu" type="checkbox">
         <nav class="header__nav">
           <ul class="header__nav-list">
-            <li class="header__nav-item"><a href="#home">Home</a></li>
-            <li class="header__nav-item"><a href="#service">Services</a></li>
-            <li class="header__nav-item"><a href="#review">Reviews</a></li>
-            <li class="header__nav-item"><a href="#pricing">Pricing</a></li>
+            <li class="header__nav-list__item"><a href="#home">Home</a></li>
+            <li class="header__nav-list__item"><a href="#service">Services</a></li>
+            <li class="header__nav-list__item"><a href="#review">Reviews</a></li>
+            <li class="header__nav-list__item"><a href="#pricing">Pricing</a></li>
           </ul>
         </nav>
       </header>
 
       <!-- main page ------------------------------------------>
-      <section class="home__main" id="home">
-        <div class="home__main-left">
-
-          <div class="home__main-text">
+      <section class="home__main">
+        <div class="home__main-info">
             <h1>The place<br>where every <span class="pet">pet</span><br>discovers <span class="happiness">happiness.</span></h1>
-          </div>
 
             <div class="home__button">
               <a href="#service" class="home__button-service">Service</a>
@@ -55,14 +52,9 @@
                 <img class="home__button-arrow" src="./img/arrow-right-s-line.svg">
               </a>
             </div>
-
-            <!-- social media -->
-            <div class="home__main-sm">
-              <a href="https://www.youtube.com/@happypetjoy"><img class="home__main-youtube" src="./img/youtube-fill.svg"></img></a>
-              <a href="https://www.tiktok.com/@happypetjoy?_t=8fHgmEpVuFn&_r=1"><img class="home__main-tiktok" src="./img/tiktok-fill.svg"></img></a>
-            </div>
-
           </div>
+
+
           <div class="home__main-img">
             <img class="home__image" src="./img/home_background.jpg" alt="dogs">
 
@@ -73,8 +65,11 @@
             <a href="#service" class="home__main-scroll"><img src="./img/arrow-down-double-line.svg"></a>
           </div>
 
-          <div class="home__contact">
-            <a href="#footer" class="home__contactfooter">contact us</a>
+          <!-- social media -->
+          <div class="home__main-sm">
+            <a href="https://www.youtube.com/@happypetjoy"><img class="home__main-youtube" src="./img/youtube-fill.svg"></img></a>
+            <a href="https://www.tiktok.com/@happypetjoy?_t=8fHgmEpVuFn&_r=1"><img class="home__main-tiktok" src="./img/tiktok-fill.svg"></img></a>
+            <a href="mailto:Happypetjoy4491@gmail.com"><img class="home__main-email" src="./img/mail-fill.svg"></img></a>
           </div>
     </section>
 
@@ -251,8 +246,27 @@
         </div>
 
         <div class="rate__footer">
-          <h2>About</h2>
-          <h2>Menu</h2>
+          <div class="rate__footer--googleMap">
+            <h1>Google Map</h1>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.2700648515306!2d-118.00757642363993!3d33.83114532937148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd29b51cb27ec5%3A0x6bd729358293cbdc!2sHappy%20Pet%20Grooming!5e0!3m2!1sen!2sus!4v1694560918147!5m2!1sen!2sus" width="241" height="160" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+
+          <div class="rate__footer--contact">
+          <h1>Contacts</h1>
+          <span><i class="ri-map-pin-2-fill"></i>3256 W Lincoln Ave Anaheim</span>
+          <span><i class="ri-phone-fill"></i>+1.714.788.4491</span>
+          <span><i class="ri-time-fill"></i>Mon - Friday: 9:30 am - 7 pm</span>
+          <span><i class="ri-mail-fill"></i>Happypetjoy4491@gmail.com</span>
+          </div>
+
+          <div class="rate__footer--menu">
+          <h1>Menu</h1>
+            <ul class="rate__footer-list">
+              <li class="rate__footer-item"><a href="#home">Home</a></li>
+              <li class="rate__footer-item"><a href="#service">Services</a></li>
+              <li class="rate__footer-item"><a href="#review">Reviews</a></li>
+              <li class="rate__footer-item"><a href="#pricing">Pricing</a></li>
+            </ul>
         </div>
       </div>
     </section>

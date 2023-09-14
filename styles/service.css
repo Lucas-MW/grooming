@@ -34,7 +34,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     position: relative;
-    top: 4em;
+    top: 1em;
     min-height: 40em;
     place-items: center;
   }
@@ -93,7 +93,9 @@
   }
 
   .service__main-add {
-    padding-left: 6em;
+    position: relative;
+    padding: 0 6em;
+    bottom:2em;
   }
   .service__main-add h2 {
     font-size: 20px;

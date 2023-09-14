@@ -38,6 +38,8 @@
   .rate__footer{
     flex-basis:300px;
     background-color: #fadadd;
+    border-radius: 15px 15px 0 0;
+    align-items: center;
   }
 
   .rate__main--price{
@@ -83,4 +85,33 @@
     position: absolute;
     /* display: inline-block; */
   }
+
+  .rate__footer{
+    display: flex;
+    padding: 2% 10%;
+    justify-content: space-between;
+  }
+
+  .rate__footer--contact i{
+    padding-right: 10px;
+  }
+
+  .rate__footer--contact span, h1{
+    display: block;
+    padding-bottom: 25px;
+  }
+
+  .rate__footer--menu{
+    width: 241px;
+  }
+
+  .rate__footer--menu p , h1{
+    display: block;
+    padding-bottom: 25px;
+  }
+
+  .rate__footer--menu li{
+    padding-bottom: 25px;
+  }
+
 }
