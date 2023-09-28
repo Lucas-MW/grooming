@@ -7,8 +7,13 @@
 :root {
   font-family: "Roboto", Arial, sans-serif;
 
-  --height-header-full: 80px;
-  --height-header-mobile: 50px;
+  --height-header-desktop: 90px;
+  --height-header-tablet: 74px;
+  --height-header-mobile: 59px;
+  --container-background: #fffff3;
+  --container-text:#333333;
+  --container-other:#5c5c5c;
+  --container-pink:#f7cac9;
 }
 
 h1 {
@@ -22,11 +27,15 @@ h1 {
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
 }
 
 a{
   color: black;
+}
+
+body{
+  background-color: var(--container-background);
 }
 
 

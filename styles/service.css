@@ -1,116 +1,161 @@
-@media screen and (max-width: 768px) {
+.service__container{
+  display:grid;
+  gap: 1rem;
+  padding:60px 26px 24px;
+  height:100%;
 }
 
-@media screen and (min-width: 769px) {
-  .service__container {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    scroll-snap-align:start;
+.service__main-img img{
+  width: 100%;
+  height:300px;
+  object-fit: cover;
+}
+
+.service__main-title{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap:16px;
+}
+
+.service__main-title h1 , p{
+  text-align: center;
+}
+
+.service__main-title h1
+{
+  font-size:36px;
+  color:var(--container-text);
+}
+
+.service__main-title p{
+  font-size:small;
+  color:var(--container-other);
+  text-align: center;
+}
+
+
+.service__main-img{
+  display: grid;
+  gap:1.5rem;
+}
+
+.service__main-hair,
+.service__main-bath,
+.service__main-nail{
+  height: 420px;
+  border: 1px solid var(--container-other);
+}
+
+
+.service__main-img h2 , p{
+  padding:10px 20px 0 20px;
+  text-align: left;
+  color:var(--container-other);
+}
+.service__main-img h2{
+  font-weight: 600;
+  font-size:medium;
+  color:var(--container-text);
+}
+
+.service__main-img p{
+  font-size:small;
+  line-height: 20px;
+}
+
+.service__main-add h2{
+  font-weight: 600;
+  font-size:medium;
+  color:#4cbb17;
+  padding:0 20px;
+}
+
+.service__main-add p{
+  font-size:small;
+}
+
+@media screen and (max-width: 519px) {
+
+}
+@media screen and (min-width:520px) and (max-width:809px){
+  .service__main-img img{
+    object-position:  40% 30%;
+    object-fit: cover;
+  }
+}
+@media screen and (min-width:810px) and (max-width:1199px){
+
+  .service__container{
+    min-height: 80vh;
+    padding: 0 12%;
+    margin-top: 50px;
   }
 
-  .service__main {
-    position: relative;
-    width: 100%;
-    min-height: 8em;
-    text-align: center;
-    margin-top: 80px;
-    border-bottom: 1px solid rgb(95, 94, 94, 0.5);
-  }
-
-  .service__main-title {
-    line-height: 3em;
-  }
-  .service__main-title h2 {
-    font-size: 1.5rem;
-  }
-
-  .service__main-title p {
-    font-size: 1rem;
-    color: rgb(95, 94, 94);
-  }
-
-  .service__main-img {
+  .service__main-img{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    position: relative;
-    top: 1em;
-    min-height: 40em;
-    place-items: center;
   }
 
-  .hair,
-  .bath,
-  .nail {
-    width: 20em;
-    height: 25em;
-    object-fit: cover;
-    border-radius: 0 50px 0 0;
+  .service__main-title h1{
+    padding: 0;
   }
 
-  .service__main-img p {
-    position: relative;
-    height: 4em;
-    text-align: center;
-    bottom: 5px;
-    background-color: rgb(95, 94, 94, 0.1);
-    font-weight: 800;
-    font-size: 1.5em;
-    padding: 1.5em;
+  .service__main-title p{
+    padding:0;
   }
+}
+
+@media screen and (min-width:1200px){
+  .service__container{
+    min-height: 100vh;
+    padding: 0 12%;
+    margin-top: 50px;
+  }
+  .service__main-img{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 100px;
+  }
+
+  .service__main-title{
+    position: relative;
+    top:20px;
+  }
+
+  .service__main-title h1{
+    padding: 0;
+  }
+
+  .service__main-title p{
+    padding:0;
+  }
+
+.service__main-img img{
+  height:500px;
+  border-radius: 0 60px 0 0;
+}
 
   .service__main-hair,
-  .service__main-bath,
-  .service__main-nail {
-    position: relative;
-  }
-  .service__hair-rect {
-    width: 20em;
-    height: 31em;
-    border: 1px solid rgb(95, 94, 94, 0.5);
-    position: absolute;
-    /* display: inline-block; */
-    bottom: 1em;
-    right: 1em;
-  }
+.service__main-bath,
+.service__main-nail{
+  height: 650px;
+  border: 1px solid var(--container-other);
+}
 
-  .service__bath-rect {
-    width: 20em;
-    height: 31em;
-    border: 1px solid rgb(95, 94, 94, 0.5);
-    position: absolute;
-    bottom: 1em;
-    right: 1em;
-  }
+.service__main-img h2{
+  font-weight: 800;
+  font-size:large;
+  padding-top: 40px;
+}
 
-  .service__nail-rect {
-    width: 20em;
-    height: 31em;
-    border: 1px solid rgb(95, 94, 94, 0.5);
-    position: absolute;
-    bottom: 1em;
-    right: 1em;
-  }
+.service__main-img p{
+  font-size:medium;
+  font-weight:500;
+}
 
-  .service__main-add {
-    position: relative;
-    padding: 0 6em;
-    bottom:2em;
-  }
-  .service__main-add h2 {
-    font-size: 20px;
-    padding: 15px 0;
-  }
-  .service__main-add p {
-    display: block;
-    font-size: 20px;
-    width: 100%;
-    color: rgb(95, 94, 94);
-    letter-spacing: 1px;
-    line-height: 30px;
-  }
-
-  .service__main-add span {
-    color: #7ad03a;
-  }
+.service__main-add{
+  position: relative;
+  bottom: 50px;
+}
 }

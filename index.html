@@ -23,13 +23,14 @@
 <!-- icon -->
 <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 
+<script defer src="./header.js"></script>
+
 </head>
 <body>
-    <div class="main__container">
-      <!-- header -------------------------------------------------->
-      <header class="header">
+      <!-- header------------------------------------------------>
+      <header class="header__container">
         <a class="header__logo" href="#home">Happy Pet Grooming</a>
-        <input class="header__menu" type="checkbox">
+        
         <nav class="header__nav">
           <ul class="header__nav-list">
             <li class="header__nav-list__item"><a href="#home">Home</a></li>
@@ -38,240 +39,167 @@
             <li class="header__nav-list__item"><a href="#pricing">Pricing</a></li>
           </ul>
         </nav>
+
+        <a href="javascript:void(0);" class="header__menu" onclick="myFunction()">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36"><path d="M3 4H21V6H3V4ZM3 11H21V13H3V11ZM3 18H21V20H3V18Z"></path></svg>
+        </a>
+
+        <a class="header__book" href="#contact">Book Grooming</a>
       </header>
+      
+<!-- container page ------------------------------------------>
+<section class="home__container">
+  <div class="home__container-info">
+    <div class="home__container-text">
+      <h1>The place<br>where every <span class="pet">pet</span><br>discovers <span class="happiness">happiness.</span></h1>
 
-      <!-- main page ------------------------------------------>
-      <section class="home__main">
-        <div class="home__main-info">
-            <h1>The place<br>where every <span class="pet">pet</span><br>discovers <span class="happiness">happiness.</span></h1>
-
-            <div class="home__button">
-              <a href="#service" class="home__button-service">Service</a>
-              <a href="#pricing" class="home__button-pricing">
-                <span>Pricing</span>
-                <img class="home__button-arrow" src="./img/arrow-right-s-line.svg">
-              </a>
-            </div>
-          </div>
-
-
-          <div class="home__main-img">
-            <img class="home__image" src="./img/home_background.jpg" alt="dogs">
-
-            <div class="home__img-rect"></div>
-          </div>
-
-          <div class="home__main-scroll">
-            <a href="#service" class="home__main-scroll"><img src="./img/arrow-down-double-line.svg"></a>
-          </div>
-
-          <!-- social media -->
-          <div class="home__main-sm">
-            <a href="https://www.youtube.com/@happypetjoy"><img class="home__main-youtube" src="./img/youtube-fill.svg"></img></a>
-            <a href="https://www.tiktok.com/@happypetjoy?_t=8fHgmEpVuFn&_r=1"><img class="home__main-tiktok" src="./img/tiktok-fill.svg"></img></a>
-            <a href="mailto:Happypetjoy4491@gmail.com"><img class="home__main-email" src="./img/mail-fill.svg"></img></a>
-          </div>
-    </section>
-
-    <!-- service page -->
-    <section class="service__container">
-      <div class="service__main" id="service">
-        <div class="service__main-title">
-        <h1>Services.</h1><p>*We provide specialized grooming services suitable for all breeds and sizes.</p></div>
-      </div>
-      <div class="service__main-img">
-        <div class="service__main-hair">
-          <img src="img/service-1.jpg" class="hair"><p>Hair cut</p>
-          <div class="service__hair-rect"></div>
-        </div>
-        <div class="service__main-bath">
-          <img src="img/service-2.jpg" class="bath"><p>Bath</p>
-          <div class="service__bath-rect"></div>
-        </div>
-        <div class="service__main-nail">
-          <img src="img/service-3.jpg" class="nail"><p>Nail trim</p>
-          <div class="service__nail-rect"></div>
-        </div>
-      </div>
-      <div class="service__main-add">
-        <h2>GROOMING ADD-ON :</h2>
-        <p>Anal Gland Expression, Ear Cleaning, Flea Bath, Flea/Tick Shampoo, Nail Grind, Sanitary Trim, Special Shampoo, Teeth Brushing and more.</p> 
-        <p><span>Call us if you have any questions or concerns.</span></p>
-      </div>
-    </section>
-
-    <!-- review page -->
-    <section class="review__container" id="review">
-      <div class="review__main">
-        <div class="review__header"><h1>Reviews.</h1>
-          <p>*Grooming isn't just about appearance. it's essential for their health, comfort, and happiness.</p>
-          <a href="https://www.yelp.com/biz/happy-pet-grooming-anaheim-3" class="review__button"><i class="ri-star-line"></i>&nbspWrite a review</a>
-        </div>
-        
-        <div class="review__content">
-          <div class="review__content--imgc">
-            <img src="./img/review_img/d.jpg">
-            <div class="review__content--textc">
-              <h2>Angel E.</h2>
-              <p>Anaheim, CA</p>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <p>Called the store and they allowed me to do a quick walkin! The employees were so friendly, and they definitely left my doggy happy and clean. I definitely recommend this establishment to everyone needing to get there furry friends groomed.
-              </p>
-          </div>
-          </div>
-          
-          <div class="review__content--img1">
-            <img src="./img/review_img/o (5).jpg">
-            <div class="review__content--text1">
-              <h2>Julie L.</h2>
-              <p>Buena Park, CA</p>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <p>So far the best hair cut quality compared to other places I went nearby. They took around 3 hours which was a little longer than I'm used to but they did a better job than those other places.
-              </p>
-          </div>
-        </div>
-
-          <div class="review__content--img2">
-            <img src="./img/review_img/o (2).jpg">
-            <div class="review__content--text2">
-              <h2>Destiny V.</h2>
-              <p>Buena Park, CA</p>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <p>I loveeee this dog grooming business! She always takes good care of my Mochi. She's can always accommodate me on last minute grooming. I would highly recommend taking your pet to get groomed here!
-              </p>
-          </div>
-          </div>
-          <div class="review__content--img4">
-            <img src="./img/review_img/d4.jpg">
-            <div class="review__content--text4">
-              <h2>Daisy L.</h2>
-              <p>Anaheim, CA</p>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <p>Wonderful service! I've been taking my dog here for two years and I am so grateful to Happy Pet Grooming. My dog has some separation anxiety and I know she must not be easy to deal with but the groomers always take her with a smile! Everyone gives my dog compliments after her hair cuts. I trust them with my Luna, 100%!
-              </p>
-          </div>
-          </div>
-          <div class="review__content--img3">
-            <img src="./img/review_img/c1.jpg">
-            <div class="review__content--text3">
-              <h2>Amany H.</h2>
-              <p>Anaheim, CA</p>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <p>I've brought two different cats here to get groomed and serviced and the owner is so cute and sweet she has been gentle with my babies and always gets the job done when I need her the most. I will always come to happy pet grooming when my kitty is looking a little nappy and will always be happy with the results.
-              </p>
-          </div>
-          </div>
-          <div class="review__content--img5">
-            <img src="./img/review_img/c.jpg">
-            <div class="review__content--text5">
-              <h2>Aura S.</h2>
-              <p>Anaheim, CA</p>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <i class="ri-star-s-fill"></i>
-              <p>I've been taking my cat KD here for a couple months and the owners are absolutely lovely to him! He always comes back home fresh and relaxed, and they send me the cutest pictures of him while he's getting groomed. Could not recommend this place more!
-              </p>
-          </div>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- pricing page -->
-    <section class="rate__container">
-      <div class="rate__main" id="pricing">
-        <div class="rate__title">
-          <h1>Pricing.</h1>
-          <p>*Call us for exact rates.</p>
-          <p>*Rates will change depending on pet size and services needed</p>
-          <p>Phone Number: (714) - 788 - 4491</p>
-        </div>
-
-        <div class="rate__main--content">
-          <div class="rate__main--price">
-            <h2>Dog Grooming</h2>
-            <ul class="rate__main--pricelist">
-              <li>Puppy: 35.00</li>
-              <li>XS Dog: $50.00 (Tea Cups etc.)</li>
-              <li>Small Dog: $55.00 - $60.00</li>
-              <li>Medium Dog: $65.00 - $80.00</li>
-              <li>Large Dog: $85.00 - $95.00</li>
-              <li>XL Dog: $100+</li>
-            </ul>
-          </div>
-
-          <div class="rate__main--image">
-            <img src="./img/rate.jpg">
-            <div class="rate__image-rect"></div>
-          </div>
-
-          <div class="rate__main--add">
-            <h2>Grooming Add-on</h2>
-            <ul class="rate__main--addlist">
-              <li>Anal Gland Expression: $10.00</li>
-              <li>Ear Cleaning: $12.00</li>
-              <li>Nail Grind: $15</li>
-              <li>Nail Trim: $15</li>
-              <li>Special Shampoo: $10.00</li>
-              <li>Teeth Brushing: $10.00</li>
-            </ul>
-          </div>
-
-          <div class="rate__main--cat">
-          <p>*Cat owners are kindly encouraged to reach out to the store for accurate pricing details.</p>
-        </div>
-        </div>
-
-        <div class="rate__footer">
-          <div class="rate__footer--googleMap">
-            <h1>Google Map</h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.2700648515306!2d-118.00757642363993!3d33.83114532937148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dd29b51cb27ec5%3A0x6bd729358293cbdc!2sHappy%20Pet%20Grooming!5e0!3m2!1sen!2sus!4v1694560918147!5m2!1sen!2sus" width="241" height="160" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-
-          <div class="rate__footer--contact">
-          <h1>Contacts</h1>
-          <span><i class="ri-map-pin-2-fill"></i>3256 W Lincoln Ave Anaheim</span>
-          <span><i class="ri-phone-fill"></i>+1.714.788.4491</span>
-          <span><i class="ri-time-fill"></i>Mon - Friday: 9:30 am - 7 pm</span>
-          <span><i class="ri-mail-fill"></i>Happypetjoy4491@gmail.com</span>
-          </div>
-
-          <div class="rate__footer--menu">
-          <h1>Menu</h1>
-            <ul class="rate__footer-list">
-              <li class="rate__footer-item"><a href="#home">Home</a></li>
-              <li class="rate__footer-item"><a href="#service">Services</a></li>
-              <li class="rate__footer-item"><a href="#review">Reviews</a></li>
-              <li class="rate__footer-item"><a href="#pricing">Pricing</a></li>
-            </ul>
-        </div>
-      </div>
-    </section>
+      <p>Welcome to Our Website, Your Pet's Grooming Paradise!</p>
     </div>
 
+      <div class="home__button">
+        <a href="#service" class="home__button-services">
+          <span>Services</span></a>
+        <a href="#contact" class="home__button-book">Book Now</a>
+      </div>
+    </div>
+
+
+    <div class="home__container-img">
+      <img class="home__image" src="./img/home_background.jpg" alt="dogs">
+
+      <div class="home__img-rect"></div>
+    </div>
+
+</section>
+
+ <!-- service page -->
+ <section class="service__container">
+  <div class="service__main" id="service">
+    <div class="service__main-title">
+    <h1>Services.</h1><p>We provide specialized grooming services suitable for all breeds and sizes.</p></div>
+  </div>
+  <div class="service__main-img">
+    <div class="service__main-hair">
+      <img src="img/service-1.jpg" class="hair"><h2>Hair cut</h2>
+      <p>Our professional groomers provide top-quality services for your pets.</p>
+      <div class="service__hair-rect"></div>
+    </div>
+    <div class="service__main-bath">
+      <img src="img/service-2.jpg" class="bath"><h2>Bath</h2>
+      <p>we prioritize your pet's well-being during the grooming process.</p>
+      <div class="service__bath-rect"></div>
+    </div>
+    <div class="service__main-nail">
+      <img src="img/service-3.jpg" class="nail"><h2>Nail trim</h2>
+      <p>We make nail trimming stress-free for pets and owners.</p>
+      <div class="service__nail-rect"></div>
+    </div>
+  </div>
+  <div class="service__main-add">
+    <h2>GROOMING ADD-ON :</h2>
+    <p>Anal Gland Expression, Ear Cleaning, Flea Bath, Flea/Tick Shampoo, Nail Grind, Sanitary Trim, Special Shampoo, Teeth Brushing and more.</p> 
+  </div>
+</section>
+
+<!-- review page -->
+<section class="review__container" id="review">
+  <div class="review__main">
+    <div class="review__header"><h1>Reviews.</h1>
+      <p>Read what our customers have to say about us</p>
+      <a href="https://www.yelp.com/biz/happy-pet-grooming-anaheim-3" class="review__button"><i class="ri-star-line"></i>&nbspWrite a review</a>
+    </div>
+    
+    <div class="review__content">
+      <div class="review__content--imgc">
+        <img src="./img/review_img/d.jpg">
+        <div class="review__content--textc">
+          <h2>Angel E.</h2>
+          <p>Anaheim, CA</p>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <p>Called the store and they allowed me to do a quick walkin! The employees were so friendly, and they definitely left my doggy happy and clean. I definitely recommend this establishment to everyone needing to get there furry friends groomed.
+          </p>
+      </div>
+      </div>
+      
+      <div class="review__content--img1">
+        <img src="./img/review_img/o (5).jpg">
+        <div class="review__content--text1">
+          <h2>Julie L.</h2>
+          <p>Buena Park, CA</p>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <p>So far the best hair cut quality compared to other places I went nearby. They took around 3 hours which was a little longer than I'm used to but they did a better job than those other places.
+          </p>
+      </div>
+    </div>
+
+      <div class="review__content--img2">
+        <img src="./img/review_img/o (2).jpg">
+        <div class="review__content--text2">
+          <h2>Destiny V.</h2>
+          <p>Buena Park, CA</p>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <p>I loveeee this dog grooming business! She always takes good care of my Mochi. She's can always accommodate me on last minute grooming. I would highly recommend taking your pet to get groomed here!
+          </p>
+      </div>
+      </div>
+      <div class="review__content--img4">
+        <img src="./img/review_img/d4.jpg">
+        <div class="review__content--text4">
+          <h2>Daisy L.</h2>
+          <p>Anaheim, CA</p>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <p>Wonderful service! I've been taking my dog here for two years and I am so grateful to Happy Pet Grooming. My dog has some separation anxiety and I know she must not be easy to deal with but the groomers always take her with a smile! Everyone gives my dog compliments after her hair cuts. I trust them with my Luna, 100%!
+          </p>
+      </div>
+      </div>
+      <div class="review__content--img3">
+        <img src="./img/review_img/c1.jpg">
+        <div class="review__content--text3">
+          <h2>Amany H.</h2>
+          <p>Anaheim, CA</p>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <p>I've brought two different cats here to get groomed and serviced and the owner is so cute and sweet she has been gentle with my babies and always gets the job done when I need her the most. I will always come to happy pet grooming when my kitty is looking a little nappy and will always be happy with the results.
+          </p>
+      </div>
+      </div>
+      <div class="review__content--img5">
+        <img src="./img/review_img/c.jpg">
+        <div class="review__content--text5">
+          <h2>Aura S.</h2>
+          <p>Anaheim, CA</p>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <i class="ri-star-s-fill"></i>
+          <p>I've been taking my cat KD here for a couple months and the owners are absolutely lovely to him! He always comes back home fresh and relaxed, and they send me the cutest pictures of him while he's getting groomed. Could not recommend this place more!
+          </p>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
   
 </body>
 </html>
